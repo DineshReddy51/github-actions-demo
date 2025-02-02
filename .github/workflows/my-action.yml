@@ -1,0 +1,17 @@
+name: My Custom GitHub Action
+
+on:
+  push:
+    branches:
+      - main  # Runs when code is pushed to the main branch
+  workflow_dispatch:  # Allows manual execution from GitHub UI
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+      
+      - name: 23ds3000012@ds.study.iitm.ac.in
+        run: echo "Hello, world!"
